@@ -1,0 +1,133 @@
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--very-light-gray);
+  padding: 5rem;
+}
+
+.container {
+  display: flex;
+  max-width: 96rem;
+  margin: 5rem auto;
+}
+
+.card {
+  padding: 4rem;
+}
+
+.card.sedans {
+  border-radius: 1rem 0 0 1rem;
+  background-color: var(--bright-orange);
+}
+
+.card.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.card.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 3rem 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.content {
+  min-height: 15rem;
+  line-height: 1.8;
+  color: var(--transparent-white);
+}
+
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem;
+  margin: 6rem 0 1rem 0;
+  cursor: pointer;
+  border-radius: 3rem;
+  border: 0.2rem solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: transparent;
+  border: 0.2rem solid var(--transparent-white);
+}
+
+.btn.sedans-btn {
+  color: var(--bright-orange);
+}
+
+.btn.suvs-btn {
+  color: var(--dark-cyan);
+}
+
+.btn.luxury-btn {
+  color: var(--very-dark-cyan);
+}
+
+.btn.sedans-btn:hover,
+.btn.sedans-btn:active,
+.btn.suvs-btn:hover,
+.btn.suvs-btn:active,
+.btn.luxury-btn:hover,
+.btn.luxury-btn:active {
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  margin: 4rem auto;
+  text-align: center;
+  color: var(--very-dark-cyan);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Tablets and Phones */
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card.sedans {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .card.luxury {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
