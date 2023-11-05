@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/timavidon/3-column-preview-card-component)
+- Live Site URL: [Live Site](https://timavidon.github.io/3-column-preview-card-component/)
 
 ## My process
 
